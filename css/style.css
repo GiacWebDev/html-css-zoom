@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #000000;
+  justify-content: flex-end;
+}
+
+.c-debug {
+  background-color: aqua;
+  border-color: bisque;
+}
+
+.box-speaker {
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+.box-speaker {
+  height: 100%;
+  width: 20%;
+}
+
+.speaker {
+  display: flex;
+  height: 25px;
+  width: 200px;
+  background-color: gray;
+}
