@@ -69,7 +69,11 @@ p {
 .speaker span {
   margin-right: 5px;
 }
+
+
+
 /* MAIN  */
+
 
 main {
   width: 100%;
@@ -79,9 +83,44 @@ main {
 main .container {
   margin: 0 auto;
   width: 90%;
-  background-color: aqua;
+  background-color: gray;
   height: calc(100vh - 160px);
+  overflow: auto;
+  text-align: center;
 }
+
+main .user-card {
+  display: inline-block;
+  position: relative;
+  background-color: blue;
+  height: 150px;
+  width: 230px;
+  margin: 5px;
+}
+
+.container .nome {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .user-card .nome i{
+  font-size: 14px;
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+
+
+
+
+
+
 
 /* BOTTOM  */
 
