@@ -83,7 +83,6 @@ main {
 main .container {
   margin: 0 auto;
   width: 90%;
-  background-color: gray;
   height: calc(100vh - 160px);
   overflow: auto;
   text-align: center;
@@ -115,7 +114,30 @@ main .user-card {
   margin-top: 4px;
 }
 
+.container .user-card.orso-uno {
+  background-image: url(/img/orso\ 1.png);
+  background-size: cover;
+}
 
+.container .user-card.orso-due {
+  background-image: url(/img/orso\ 2.png);
+  background-size: cover;
+}
+
+.container .user-card.orso-tre {
+  background-image: url(/img/orso\ 3.png);
+  background-size: cover;
+}
+
+.container .user-card.orso-quattro {
+  background-image: url(/img/orso\ 4.png);
+  background-size: cover;
+}
+
+.container .user-card.orso-cinque {
+  background-image: url(/img/orso\ 5.png);
+  background-size: cover;
+}
 
 
 
