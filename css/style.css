@@ -28,8 +28,28 @@ p {
   font-size: .5rem;
 }
 
+.active {
+  color: aquamarine;
+}
+
 /* TOP-BAR  */
 
+button {
+  display: flex;
+  background-color: #4A4A4A;
+  color: white;
+  align-items: center;
+  height: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.top-bar button i {
+  font-size: 1rem;
+  margin-right: 5px;
+}
 
 .top-bar {
   display: flex;
@@ -37,39 +57,8 @@ p {
   width: 100%;
   background-color: #000000;
   justify-content: flex-end;
-  padding-top: 20px;
+  padding-top: 5px;
 }
-
-.speaker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: gray;
-  padding: 0px 5px;
-  border-radius: 5px;
-  margin-right: 10px;
-  height: 25px;
-}
-
-.iconatop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: gray;
-  padding: 0px 5px;
-  border-radius: 5px;
-  margin-right: 5px;
-  height: 25px;
-}
-
-.iconatop i{
-  font-size: 14px;
-}
-
-.speaker span {
-  margin-right: 5px;
-}
-
 
 
 /* MAIN  */
@@ -78,14 +67,18 @@ p {
 main {
   width: 100%;
   background-color: black;
+  display: flex;
 }
 
 main .container {
+  display: flex;
   margin: 0 auto;
-  width: 90%;
+  width: 950%;
   height: calc(100vh - 170px);
   overflow: auto;
-  text-align: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content:center
 }
 
 main .user-card {
@@ -93,9 +86,10 @@ main .user-card {
   position: relative;
   background-color: blue;
   height: 150px;
-  width: 230px;
-  margin: 5px;
+  width: 250px;
+  margin: 2px;
   min-width: 200px;
+  border-radius: 5px;
 }
 
 .container .nome {
@@ -180,6 +174,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin: 0px 10px;
+  cursor: pointer;
 }
 
 .row .col p {
@@ -193,6 +188,7 @@ footer {
   height: 100%;
   padding: 0px 20px;
   background-color: #4A4A4A;
+  cursor: pointer;
 }
 
 .col-right {
@@ -201,11 +197,12 @@ footer {
 }
 
 .col-right .end-meeting p {
-  color: red
-;}
+  color: red;
+}
 
 .col-left, .col-right{
   width: 20%;
+  flex-shrink: 0;
 }
 
 footer .fa-solid.fa-comment {
